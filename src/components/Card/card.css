@@ -1,0 +1,30 @@
+.brewName {
+  padding: 2em 1em 1em 2em;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul.brewName li:first-child {
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+ul.brewName li {
+  text-align: left;
+
+  padding: 0.1em;
+}
+
+.cardStyle {
+  width: 18rem;
+  height: 16rem;
+
+  background-color: #fff2e6;
+  border-radius: 0.3em;
+}
+
+.detailButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
