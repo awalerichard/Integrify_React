@@ -7,7 +7,7 @@ import "../../App.js";
 
 import BrewsCard from "../../components/Card";
 import SearchBar from "../../components/Search";
-import DetailButton from "../../components/Button";
+//import DetailButton from "../../components/Button";
 
 const Homepage = () => {
   /*  const dummyData = [
@@ -69,6 +69,16 @@ const Homepage = () => {
                   name={item.name}
                   city={item.city}
                   breweryType={item.brewery_type}
+                  street={item.street}
+                  state={item.state}
+                  postalCode={item.postal_code}
+                  country={item.country}
+                  longitude={item.longitude}
+                  latitute={item.latitude}
+                  phone={item.phone}
+                  website={item.website_url}
+                  updated={item.updated_at}
+                  created={item.created_at}
                 />
               </Col>
             );

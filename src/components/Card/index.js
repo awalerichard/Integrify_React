@@ -1,7 +1,8 @@
 import { Card } from "react-bootstrap";
 import DetailButton from "../../components/Button";
+
 import "./card.css";
-const BrewsCard = ({ name, city, breweryType }) => {
+const BrewsCard = ({ id, name, city, breweryType, street }) => {
   return (
     <Card className="cardStyle">
       <Card.Body>
@@ -14,7 +15,21 @@ const BrewsCard = ({ name, city, breweryType }) => {
           </ul>
         </Card.Text>
       </Card.Body>
-      <DetailButton className="detailButton" />
+      <DetailButton
+        cardId={id}
+        /* breweryType={item.brewery_type}
+        street={item.street}
+        state={item.state}
+        postalCode={item.postal_code}
+        country={item.country}
+        longitude={item.longitude}
+        latitute={item.latitude}
+        phone={item.phone}
+        website={item.website_url}
+        updated={item.updated_at}
+        created={item.created_at}
+        className="detailButton" */
+      />
     </Card>
   );
 };
