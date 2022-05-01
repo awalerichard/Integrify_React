@@ -16,7 +16,7 @@ import "../../App.js";
 const DetailPage = () => {
   let params = useParams();
   useEffect(() => {
-    console.log(params);
+    // console.log(params);
     // Update the document title using the browser API
     // setCardData([...cardData, { title: "card8" }]);
     axios
@@ -26,13 +26,13 @@ const DetailPage = () => {
         //console.log(response);
         setCardData(response.data);
       });
-  }, []);
+  });
   const [cardData, setCardData] = useState({});
   return (
     <div>
       <Container>
         <Row>
-          <Col xs={12} md={6} lg={4} style={{ marginBottom: "2em" }}>
+          <Col style={{ marginBottom: "2em" }}>
             <BrewsDetailPage
               id={cardData.id}
               name={cardData.name}
@@ -40,6 +40,7 @@ const DetailPage = () => {
               breweryType={cardData.brewery_type}
               street={cardData.street}
               state={cardData.state}
+              county={cardData.county_province}
               postalCode={cardData.postal_code}
               country={cardData.country}
               longitude={cardData.longitude}

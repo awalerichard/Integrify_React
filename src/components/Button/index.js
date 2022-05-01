@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import "./buttonStyle.css";
 
-const DetailButton = ({ cardId }) => {
+const DetailButton = ({ onButtonClick, title }) => {
   return (
     /* ´``template literal*/
-    <Link to={`detail/${cardId}`} className="d-grid gap-2 formatButton">
-      <Button>View Detail</Button>
-    </Link>
+    <Button onClick={onButtonClick} className="d-grid gap-2 formatButton">
+      {title}
+    </Button>
   );
 };
 

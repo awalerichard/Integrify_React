@@ -1,15 +1,22 @@
-.formatButton button {
+/* .formatButton button {
   background-color: #ffbf00;
   color: #000;
-}
+} */
 
 .formatButton {
   text-decoration: none;
+  background-color: #ffbf00;
+  border: none;
 }
-.formatButton button:hover {
+
+.formatButton:hover {
   background-color: #ffdf80;
   color: black;
 }
+/* .formatButton button:hover {
+  background-color: #ffdf80;
+  color: black;
+} */
 .btn-primary {
   border: none;
 }

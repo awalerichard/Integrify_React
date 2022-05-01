@@ -8,7 +8,8 @@ const MainNavigation = () => {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/detail/:cardId" element={<DetailPage />} />
+      <Route path="/breweries/:cardId" element={<DetailPage />} />
+      {/* // Using cardId for specifying an element" */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

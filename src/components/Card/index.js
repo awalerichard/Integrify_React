@@ -1,8 +1,15 @@
 import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import DetailButton from "../../components/Button";
 
 import "./card.css";
 const BrewsCard = ({ id, name, city, breweryType, street }) => {
+  let navigate = useNavigate();
+
+  const handleViewDetailClick = (cardId) => {
+    navigate(`/breweries/${cardId}`);
+  };
+
   return (
     <Card className="cardStyle">
       <Card.Body>
@@ -16,19 +23,8 @@ const BrewsCard = ({ id, name, city, breweryType, street }) => {
         </Card.Text>
       </Card.Body>
       <DetailButton
-        cardId={id}
-        /* breweryType={item.brewery_type}
-        street={item.street}
-        state={item.state}
-        postalCode={item.postal_code}
-        country={item.country}
-        longitude={item.longitude}
-        latitute={item.latitude}
-        phone={item.phone}
-        website={item.website_url}
-        updated={item.updated_at}
-        created={item.created_at}
-        className="detailButton" */
+        title={"View Detail"}
+        onButtonClick={() => handleViewDetailClick(id)}
       />
     </Card>
   );
