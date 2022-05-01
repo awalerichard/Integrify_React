@@ -19,12 +19,12 @@ ul.brewName li {
   height: 16rem;
 
   background-color: #fff2e6;
-  border-radius: 0.3em;
+  border-radius: 0;
 }
 
-.detailButton {
+/* .detailButton {
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-}
+} */

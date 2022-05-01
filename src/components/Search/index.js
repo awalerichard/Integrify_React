@@ -2,10 +2,16 @@
 import { Form, FormControl } from "react-bootstrap";
 //import DetailButton from "../Button";
 import "./search.css";
-const SearchBar = () => {
+const SearchBar = ({ value, onChange }) => {
   return (
     <Form className="searchBar">
-      <FormControl type="search" placeholder="Search" aria-label="Search" />
+      <FormControl
+        value={value}
+        onChange={onChange}
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
     </Form>
   );
 };

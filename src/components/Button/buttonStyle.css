@@ -1,17 +1,21 @@
-/* .formatButton button {
-  background-color: #ffbf00;
-  color: #000;
-} */
-
 .formatButton {
   text-decoration: none;
-  background-color: #ffbf00;
+  background-color: #ffdf80;
   border: none;
+  border-radius: 0;
+  color: #000;
 }
 
 .formatButton:hover {
-  background-color: #ffdf80;
+  background-color: #ffeead;
   color: black;
+}
+
+.formatButton:focus,
+.formatButton:focus-visible {
+  background-color: #ffeead;
+  color: black;
+  border: none;
 }
 /* .formatButton button:hover {
   background-color: #ffdf80;

@@ -8,7 +8,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import BrewsDetailPage from "../../components/BrewsDetailPage/index.js";
-
+import "./detailPageStyle.css";
 import "../../App.js";
 
 //import DetailButton from "../../components/Button";
@@ -30,9 +30,9 @@ const DetailPage = () => {
   const [cardData, setCardData] = useState({});
   return (
     <div>
-      <Container>
+      <Container className="detailCard">
         <Row>
-          <Col style={{ marginBottom: "2em" }}>
+          <Col xs={12} md={8} lg={6} style={{ marginBottom: "2em" }}>
             <BrewsDetailPage
               id={cardData.id}
               name={cardData.name}
