@@ -17,12 +17,13 @@ const BrewsDetailPage = ({
 }) => {
   let navigate = useNavigate();
   return (
-    <Card>
-      <Card.Header>Detail Information about chosen Brewery</Card.Header>
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
+    <Card className="detailCardBody">
+      {/*   <Card.Header>Detail Information about chosen Brewery</Card.Header> */}
+      <Card.Body className="detailCard">
+        {/*   <Card.Title>{name}</Card.Title> */}
+        <Card.Text className="detailCardList">
           <ul>
+            <li> Name: {name}</li>
             <li>Type: {breweryType} </li>
             <li>City: {city} </li>
             <li>County: {county} </li>
@@ -31,9 +32,15 @@ const BrewsDetailPage = ({
             <li>Country: {country} </li>
             <li>Phone: {phone} </li>
             <li>Website: {website}</li>
+            <li>
+              <DetailButton
+                className="centerButton"
+                title={"Go Back"}
+                onButtonClick={() => navigate(-1)}
+              />
+            </li>
           </ul>
         </Card.Text>
-        <DetailButton title={"Go Back"} onButtonClick={() => navigate(-1)} />
       </Card.Body>
     </Card>
   );

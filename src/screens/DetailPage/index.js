@@ -30,9 +30,9 @@ const DetailPage = () => {
   const [cardData, setCardData] = useState({});
   return (
     <div>
-      <Container className="detailCard">
+      <Container>
         <Row>
-          <Col xs={12} md={8} lg={6} style={{ marginBottom: "2em" }}>
+          <Col xs={12} md={10} lg={6} style={{ marginBottom: "2em" }}>
             <BrewsDetailPage
               id={cardData.id}
               name={cardData.name}
