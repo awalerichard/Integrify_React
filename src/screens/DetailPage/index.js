@@ -34,21 +34,21 @@ const DetailPage = () => {
         <Row>
           <Col xs={12} style={{ marginBottom: "2em" }}>
             <BrewsDetailPage
-              id={cardData.id}
-              name={cardData.name}
-              city={cardData.city}
-              breweryType={cardData.brewery_type}
-              street={cardData.street}
-              state={cardData.state}
-              county={cardData.county_province}
-              postalCode={cardData.postal_code}
-              country={cardData.country}
-              longitude={cardData.longitude}
-              latitute={cardData.latitude}
-              phone={cardData.phone}
-              website={cardData.website_url}
-              updated={cardData.updated_at}
-              created={cardData.created_at}
+              id={cardData.id || "Not Available"}
+              name={cardData.name || "Not Available"}
+              city={cardData.city || "Not Available"}
+              breweryType={cardData.brewery_type || "Not Available"}
+              street={cardData.street || "Not Available"}
+              state={cardData.state || "Not Available"}
+              county={cardData.county_province || "Not Available"}
+              postalCode={cardData.postal_code || "Not Available"}
+              country={cardData.country || "Not Available"}
+              longitude={cardData.longitude || "Not Available"}
+              latitute={cardData.latitude || "Not Available"}
+              phone={cardData.phone || "Not Available"}
+              website={cardData.website_url || "Not Available"}
+              updated={cardData.updated_at || "Not Available"}
+              created={cardData.created_at || "Not Available"}
             />
           </Col>
         </Row>

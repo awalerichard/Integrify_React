@@ -1,0 +1,14 @@
+div.error404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.error404 h1 {
+  display: flex;
+}
+
+.error404 img {
+  display: block;
+}
