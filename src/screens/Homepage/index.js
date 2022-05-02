@@ -61,10 +61,10 @@ const Homepage = () => {
       .get(`https://api.openbrewerydb.org/breweries/search?query=${query}`)
       .then((res) => {
         setSearchData(res.data);
-        console.log(res.data);
+        /* console.log(res.data); */
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
       });
   };
 
@@ -88,13 +88,7 @@ const Homepage = () => {
           {searchData.length > 0
             ? searchData.map((item) => {
                 return (
-                  <Col
-                    key={item.id}
-                    xs={12}
-                    md={6}
-                    lg={4}
-                    style={{ marginBottom: "2em" }}
-                  >
+                  <Col xs={12} md={6} lg={4} style={{ marginBottom: "2em" }}>
                     <BrewsCard
                       id={item.id}
                       name={item.name}
